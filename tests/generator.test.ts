@@ -1,6 +1,12 @@
-import { writeFileSync } from "fs";
+import { access, existsSync, mkdirSync, writeFileSync } from "fs";
 import path from "path";
 import { generate } from "../src/index";
+
+try {
+    if (!existsSync(path.join(__dirname, "generated"))) {
+        mkdirSync(path.join(__dirname, "generated"));
+    }
+} catch (err) {}
 
 test("banner with default information", async () => {
     const generated = await generate({ name: "Server" });
