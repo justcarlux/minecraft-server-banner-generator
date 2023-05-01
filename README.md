@@ -22,7 +22,7 @@ Module to generate images of Minecraft-like banners with information about a ser
 
 2. Then, call the `generate` function by passing the information for the banner:
 
-    ```js
+    ```ts
     // Using HyCraft information
     const options = {
         name: "HyCraft",
@@ -57,7 +57,7 @@ generate(options: BannerGeneratorOptions) => Promise<Buffer>
 Generate a banner of a Minecraft server. Returns a `Promise` with the banner as a `Buffer`, or throws an error if something happened while generating the image.
 
 - options.name (`string`): Name that's going to appear at the top of the banner as the server name.
-- options.players (optional, `{ max?: number, online?: number }`): Amount of players that's going to appear at the top right corner of the banner. Defaults to `{ max: 0, online: 0 }`
-- options.motd (optional, `string`): MOTD (Message of the day) of the server. Appears under the server name. Defaults to: `§7A Minecraft Server`
-- options.favicon (optional, `Buffer): Favicon of the server as a buffer. Appears at the left of the banner. Defaults to the default Minecraft server favicon
-- options.mimeType (optional, `image/png` or `image/jpeg`): Favicon of the server as a buffer. Appears at the left of the banner Defaults to `image/png`
+- options.players (optional, `{ max?: number, online?: number }`): Amount of players that's going to appear at the top right corner of the banner. Defaults to `{ max: 0, online: 0 }`.
+- options.motd (optional, `string`): MOTD (Message of the day) of the server. Appears under the server name. Defaults to: `§7A Minecraft Server`.
+- options.favicon (optional, `Buffer`): Favicon of the server as a buffer. Appears at the left of the banner. Defaults to the default Minecraft server favicon.
+- options.mimeType (optional, `image/png` or `image/jpeg`): Favicon of the server as a buffer. Appears at the left of the banner Defaults to `image/png`.
