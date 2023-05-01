@@ -1,6 +1,6 @@
 {
     "name": "minecraft-server-banner-generator",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Module to generate images of Minecraft-like banners with information about a server.",
     "main": "lib/src/index.js",
     "types": "lib/src/index.d.ts",
