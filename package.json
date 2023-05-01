@@ -2,13 +2,16 @@
     "name": "minecraft-server-banner-generator",
     "version": "1.0.0",
     "description": "Module to generate images of Minecraft-like banners with information about a server.",
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
+    "main": "lib/src/index.js",
+    "types": "lib/src/index.d.ts",
     "files": [
-        "lib/**/*"
+        "lib/src/*",
+        "lib/src/assets/*",
+        "lib/src/assets/fonts/*",
+        "lib/src/assets/images/*"
     ],
     "scripts": {
-        "build": "tsc",
+        "build": "tsc && npx copyfiles src/assets/images/*.* lib && npx copyfiles src/assets/fonts/*.* lib",
         "test": "jest --config jestconfig.json"
     },
     "repository": {
@@ -29,6 +32,7 @@
     "devDependencies": {
         "@types/jest": "^29.5.1",
         "@types/node": "^18.16.3",
+        "copyfiles": "^2.4.1",
         "jest": "^29.5.0",
         "ts-jest": "^29.1.0",
         "typescript": "^5.0.4"
