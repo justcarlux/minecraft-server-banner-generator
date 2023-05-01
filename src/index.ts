@@ -75,7 +75,7 @@ async function generate(options: BannerGeneratorOptions): Promise<Buffer> {
     ctx.fillText(options.name, 176, 78);
 
     // Parse and draw server motd
-    const motd = (options.motd?.trim() || "§7A Minecraft Server").split(/\r?\n/).map(e => motdToArray(e));
+    const motd = (options.motd || "§7A Minecraft Server").split(/\r?\n/).map(e => motdToArray(e));
     motd.forEach((line, lineIndex) => {
 
         let x = 176;
