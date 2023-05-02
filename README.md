@@ -27,8 +27,8 @@ Module to generate images of Minecraft-like banners with information about a ser
     const options = {
         name: "HyCraft",
         players: {
-            "online": 954,
-            "max": 5000
+            online: 721,
+            max: 5000
         },
         motd: "§a§lHYCRAFT §f§lNETWORK §8» §7[1.7 1.19]\n§f§lSpeed SkyWars §8▸ §6¡Nuevo modo de SkyWars!§r",
         favicon: Buffer.from(
