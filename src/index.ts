@@ -7,7 +7,7 @@ import { motdToArray } from "./utils";
  * Options for the generator
  * @interface BannerGeneratorOptions
 */
-export interface BannerGeneratorOptions {
+interface BannerGeneratorOptions {
     /** Name that's going to appear at the top of the banner as the server name */
     name: string,
     /** Amount of players that's going to appear at the top right corner of the banner. Defaults to `{ max: 0, online: 0 }` */
@@ -152,5 +152,5 @@ async function generate(options: BannerGeneratorOptions): Promise<Buffer> {
 
 }
 
-export { generate };
+export { generate, BannerGeneratorOptions };
 
