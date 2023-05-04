@@ -25,7 +25,7 @@ interface BannerGeneratorOptions {
 
 /**
  * Generate a banner of a Minecraft server. Returns a `Promise` with the banner as a `Buffer`, or throws an error if something happened while generating the image.
- * @param {options} BannerGeneratorOptions The result ID from where you want to get information
+ * @param {options} BannerGeneratorOptions Options for the generator
  * @returns {Promise<Buffer>} The banner image (in PNG) according to the *mimeType* specified as a Buffer. Throws an error if something happens while generating the banner
 */
 async function generate(options: BannerGeneratorOptions): Promise<Buffer> {
