@@ -16,19 +16,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/LKxth/minecraft-server-banner-generator.git"
+        "url": "git+https://github.com/justcarlux/minecraft-server-banner-generator.git"
     },
     "keywords": [
         "minecraft",
         "banner",
         "servers"
     ],
-    "author": "LKxth",
+    "author": "justcarlux",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/LKxth/minecraft-server-banner-generator/issues"
+        "url": "https://github.com/justcarlux/minecraft-server-banner-generator/issues"
     },
-    "homepage": "https://github.com/LKxth/minecraft-server-banner-generator#readme",
+    "homepage": "https://github.com/justcarlux/minecraft-server-banner-generator#readme",
     "devDependencies": {
         "@types/jest": "^29.5.1",
         "@types/node": "^18.16.3",
